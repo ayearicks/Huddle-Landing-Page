@@ -1,0 +1,35 @@
+/* Global Variables */
+:root {
+    --VeryPaleCyan: hsl(193, 100%, 96%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --GrayishBlue: hsl(208, 11%, 55%);
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+ .call-to-action {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+ }
+
+
+ /* Footer */
+
+ 
+    .attribution {
+        font-size: 11px; text-align: center; 
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%); 
+    }
+ 

@@ -9,5 +9,5 @@ This is a coding challege by [Frontend Mentor](https://www.frontendmentor.io).
 *HTML
 *CSS
 *jQuery
-
+*Bootstrap
 
