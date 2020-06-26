@@ -91,9 +91,8 @@ h1, h2, h3, h4, h5 {
     div.top-cta div.jumbotron div.heading img#mockups {
         margin-top: -4rem;
         min-width: 115%;
+        padding-right: 5rem;
     }
-
-    
 
 }
  
@@ -117,6 +116,23 @@ h1, h2, h3, h4, h5 {
      padding-top: 5rem;
  }
 
+ /* 1200px+ Viewpoint */
+ @media (min-width: 1200px){
+     div.features div.feature-group {
+         max-width: 90%;
+         margin: 2.5rem auto;
+     }
+
+     div.features div.feature-group h2, div.features div.feature-group p {
+         padding-left: 5rem;
+     }
+
+     div.features div.feature-group img {
+         padding: 5rem;
+     }
+ }
+
+
 
  /* Bottom Call-To-Action */
  div.container.bottom-cta {
@@ -128,6 +144,15 @@ h1, h2, h3, h4, h5 {
      background-color: var(--White);
      border-radius: 25px;
      box-shadow: 2px 2px 10px 0px rgba(87, 112, 136, 0.35);
+ }
+
+ /* 1200px+ Viewpoint */
+ @media (min-width: 1200px) {
+     div.container.bottom-cta {
+         width: 50%;
+         padding: 4rem;
+         margin: 10rem auto -5rem auto;
+     }
  }
 
 
@@ -145,7 +170,6 @@ footer.contact div.row {
 footer.contact img.logo-footer {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
 }
-
 
 footer.contact ul.contact-links {
     list-style: none;
@@ -166,7 +190,8 @@ footer.contact div.social-links {
     padding: 1.5rem;
 }
 
-footer.contact div.social-links i {
+footer.contact div.social-links a i {
+    color: var(--White);
     border: 1px solid var(--White);
     padding: 1.5rem;
     border-radius: 2rem;
@@ -178,7 +203,27 @@ footer p.attribution {
     margin-left: 0;
 }
     
-.attribution a {
+footer p.attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+/* 1200px+ Viewpoint */
+@media (min-width: 1200px) {
+    footer.contact {
+        padding: 10rem 5rem 2rem 5rem;
+    }
+
+    footer.contact div.social-links a i {
+        padding: .5rem;
+    }
+
+    footer.contact div.row p.copy {
+        font-size: 12px;
+        margin-left: auto;
+    }
+
+    footer p.attribution {
+        padding-top: 2.5rem;
+    }
 }
  
