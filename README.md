@@ -4,7 +4,7 @@
 
 This is a coding challege by [Frontend Mentor](https://www.frontendmentor.io).
 
-Fontend Mentor challenges are designed for practice in a real-world workflow.
+Frontend Mentor challenges are designed for practice in a real-world workflow.
 
 **Technologies Used**
 
