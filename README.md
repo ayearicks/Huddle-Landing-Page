@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Screenshots
 
-![Mobile](assets/img/huddleMobile.png)
-![Desktop](assets/img/huddleDesktop.png)
+<img src="assets/img/huddleMobile.png" width="200"> <img src="assets/img/huddleDesktop.png" width="600">
 
 
 
