@@ -45,7 +45,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Bootstrap 5
+- Bootstrap 4
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
