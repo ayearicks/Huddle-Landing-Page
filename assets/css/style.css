@@ -14,119 +14,118 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
- .container-fluid {
-     padding: 0;
-     margin: 0;
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Top Call-To-Action */
+
+.top-cta {
+    background-color: var(--VeryPaleCyan);
+    background-image: url('../img/bg-hero-mobile.svg');
+    background-size: stretch;
+    background-repeat: no-repeat;     
  }
+ 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.huddleLogo {
+    max-width: 60%;
+}
 
  .cta-btn {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     background-color: var(--Pink);
     color: var(--White);
     border-radius: 25px;
-    padding: .5rem 3rem;
+    padding: 8px;
  }
 
- .row {
-     margin-right: 0;
- }
-
-
- /* Top Call-To-Action */
- div.top-cta div.jumbotron {
-     background-color: var(--VeryPaleCyan);
-     background-image: url('../img/bg-hero-mobile.svg');
-     background-size: stretch;
-     background-repeat: no-repeat;     
- }
-
-div.top-cta-links a img.huddleLogo {
-     max-width: 100%;
-     padding-left: 1rem;
- }
-
- div.top-cta-links a.btn {
-     background-color: var(--White);
-     text-transform: none;
-     font-weight: 700;
-     border-radius: 20px;
-     padding: .2rem 2rem;
-     box-shadow: 0px 2px 8px 0px rgba(128, 141, 153, .30);
- }
-
- div.heading p {
+ .heading p {
      font-size: 22px;
  }
 
- div.heading img {
+ .heading img {
      max-width: 100%;
      margin-top: 4rem;
  }
 
  /* 1200px+ Viewpoint */
 @media (min-width: 1200px){
-    div.top-cta div.jumbotron {
-        padding-bottom: 8rem;
+
+   .cta-btn {
+       padding: 1rem 2.5rem;
+       font-size: 20px;
+       border-radius: 25px;
+   }
+   
+    .top-cta {
+        padding: 2rem 1rem 8rem 1rem;
         margin-bottom: 10rem;
     }
-
-    div.top-cta-links a.btn {
-        padding: .8rem 4.5rem;
-        border-radius: 25px;
-    }
     
-    div.heading a#cta-btn-top {
-        padding: 1rem 4.5rem;
-        border-radius: 30px;
-    }
-    
-    div.heading img#mockups {
-        margin-top: -4rem;
+    #mockups {
+        margin-top: 0;
         min-width: 115%;
-        padding-right: 5rem;
+        padding-right: 3rem;
     }
 
 }
  
 
  /* Features */
- div.features div.feature-group {
+ .feature-group {
      text-align: center;
      border-radius: 25px;
      box-shadow: 2px 2px 10px 0px rgba(87, 112, 136, 0.35);
      margin: 2rem 1rem 4rem 1rem; 
  }
 
- div.features div.feature-group p {
+.feature-group p {
      color: var(--GrayishBlue);
      padding-top: .5rem;
  }
 
- div.features div.feature-group img {
+ .feature-group img {
      max-width: 100%;
      padding-top: 5rem;
  }
 
  /* 1200px+ Viewpoint */
  @media (min-width: 1200px){
-     div.features div.feature-group {
+     .feature-group {
          max-width: 90%;
          margin: 2.5rem auto;
      }
 
-     div.features div.feature-group h2, div.features div.feature-group p {
+     .feature-group h2,
+     .feature-group p {
          padding-left: 5rem;
      }
 
-     div.features div.feature-group img {
+     .feature-group img {
          padding: 5rem;
      }
  }
@@ -134,10 +133,11 @@ div.top-cta-links a img.huddleLogo {
 
 
  /* Bottom Call-To-Action */
- div.container.bottom-cta {
+ .bottom-cta {
      width: 90%;
      padding: 2rem;
-     margin: 10rem 1rem -5rem 1rem;
+     margin-top: 10rem;
+     margin-bottom: -5rem;
      position: relative;
      z-index: 1;
      background-color: var(--White);
@@ -147,82 +147,87 @@ div.top-cta-links a img.huddleLogo {
 
  /* 1200px+ Viewpoint */
  @media (min-width: 1200px) {
-     div.container.bottom-cta {
-         width: 50%;
-         padding: 4rem;
-         margin: 10rem auto -5rem auto;
+    .bottom-cta {
+        width: 60%;
      }
  }
 
 
  /* Footer */
-footer.contact {
+.contact {
     background-color: var(--VeryDarkCyan);
     color: var(--White);
     padding: 10rem 0 1rem 0;
 }
 
-footer div.row {
-    padding-left: 1rem;
-}
-
-footer img.logo-footer {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
-}
-
-footer ul.contact-links {
-    list-style: none;
-    padding-left: .2rem;
-}
-
-footer ul.contact-links li {
-    padding: .5rem 0;
-}
-footer ul.contact-links li a {
+.contact a {
+    text-decoration: none;
     color: var(--White);
     font-size: 22px;
 }
 
-footer div.social-links {
+.contact .row {
+    padding-left: 1rem;
+}
+
+.logo-footer {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+}
+
+.contact-links li {
+    list-style: none;
+    padding: .5rem 0;
+}
+
+
+.social-links {
     margin: 0 auto;
     text-align: center;
-    padding: 1.5rem;
+    padding: .5rem;
 }
 
-footer div.social-links a i {
+
+.social-links i {
     color: var(--White);
     border: 1px solid var(--White);
-    padding: 1.5rem;
-    border-radius: 2rem;
+    padding: 25px;
+    border-radius: 40px;
 }
 
-footer p.attribution {
+.social-links i:hover {
+    color: var(--Pink);
+}
+
+.copy {
+    margin-top: 40px;
+}
+
+.attribution {
     font-size: 11px; 
     text-align: center;
     margin-left: 0;
 }
     
-footer p.attribution a {
+.attribution a {
+    font-size: 11px;
     color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover {
+    color: var(--Pink);
 }
 
 /* 1200px+ Viewpoint */
 @media (min-width: 1200px) {
-    footer.contact {
-        padding: 10rem 5rem 2rem 5rem;
+    
+    .contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-
-    footer.contact div.social-links a i {
-        padding: .5rem;
+    
+    .social-links {
+        margin-top: 5rem;
     }
-
-    footer.contact div.row p.copy {
-        font-size: 12px;
-        margin-left: auto;
-    }
-
-    footer p.attribution {
-        padding-top: 2.5rem;
-    }
+    
 }
  
