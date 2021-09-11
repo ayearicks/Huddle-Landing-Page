@@ -14,84 +14,82 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
- .container-fluid {
-     padding: 0;
-     margin: 0;
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Top Call-To-Action */
+
+.top-cta {
+    background-color: var(--VeryPaleCyan);
+    background-image: url('../img/bg-hero-mobile.svg');
+    background-size: stretch;
+    background-repeat: no-repeat;     
  }
+ 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.huddleLogo {
+    max-width: 60%;
+}
 
  .cta-btn {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     background-color: var(--Pink);
     color: var(--White);
     border-radius: 25px;
-    padding: .5rem 3rem;
+    padding: 8px;
  }
 
- .row {
-     margin-right: 0;
- }
-
-
- /* Top Call-To-Action */
- div.top-cta div.jumbotron {
-     background-color: var(--VeryPaleCyan);
-     background-image: url('../img/bg-hero-mobile.svg');
-     background-size: stretch;
-     background-repeat: no-repeat;     
- }
-
-div.top-cta-links a img.huddleLogo {
-     max-width: 100%;
-     padding-left: 1rem;
- }
-
- div.top-cta-links a.btn {
-     background-color: var(--White);
-     text-transform: none;
-     font-weight: 700;
-     border-radius: 20px;
-     padding: .2rem 2rem;
-     box-shadow: 0px 2px 8px 0px rgba(128, 141, 153, .30);
- }
-
- div.heading p {
+ .heading p {
      font-size: 22px;
  }
 
- div.heading img {
+ .heading img {
      max-width: 100%;
      margin-top: 4rem;
  }
 
  /* 1200px+ Viewpoint */
 @media (min-width: 1200px){
-    div.top-cta div.jumbotron {
-        padding-bottom: 8rem;
+
+   .cta-btn {
+       padding: 1rem 2.5rem;
+       font-size: 20px;
+       border-radius: 25px;
+   }
+   
+    .top-cta {
+        padding: 2rem 1rem 8rem 1rem;
         margin-bottom: 10rem;
     }
-
-    div.top-cta-links a.btn {
-        padding: .8rem 4.5rem;
-        border-radius: 25px;
-    }
     
-    div.heading a#cta-btn-top {
-        padding: 1rem 4.5rem;
-        border-radius: 30px;
-    }
-    
-    div.heading img#mockups {
-        margin-top: -4rem;
+    #mockups {
+        margin-top: 0;
         min-width: 115%;
-        padding-right: 5rem;
+        padding-right: 3rem;
     }
 
 }

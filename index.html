@@ -4,21 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,400;1,700&display=swap" rel="stylesheet">
 
-  <!-- CSS Framework -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- Custom Styles -->
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
   
   <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/e822198573.js" crossorigin="anonymous"></script>
 
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle Landing Page</title>
 
@@ -26,46 +22,36 @@
 <body>
 
   <!-- Main Container -->
-  <div class="container-fluid main">
+  <main class="container-fluid">
 
 
-    <!-- Jumbotron/Hero Section -->
-    <div class="top-cta">
-
-      <div class="jumbotron jumbotron-fluid">
-
-          <div class="top-cta-links row px-xl-5 pb-xl-5 justify-content-around">
-            <div class="col-5">
-              <a href="#">
-                <img src="assets/img/logo.svg" alt="Huddle Logo" class="huddleLogo">
-              </a>
-            </div>
-            <div class="col-6 text-right">
-              <a href="#" class="btn" role="button">
-                Try It Free
-              </a>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <div class="top-cta container-fluid jumbotron">
+      <nav>
+        <a href="#">
+          <img src="assets/img/logo.svg" alt="Huddle Logo" class="huddleLogo">
+        </a>
+        <a href="#" class="btn cta-btn" role="button">
+          Try It Free
+        </a>
+      </nav>
             
-          <div class="row heading pt-5 px-4 mt-5 justify-content-xl-around">
+      <div class="row heading pt-5 px-4 mt-5 justify-content-xl-around">
+        <div class="col-12 col-xl-5 text-center text-xl-left mt-xl-3">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p class="pt-2 pt-xl-4">
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+            Create connections with your users as you engage in genuine discussion.
+          </p>
+          <a href="#" class="btn cta-btn mt-xl-3" role="button" id="cta-btn-top">
+            Get Started For Free
+          </a>
+        </div>
 
-            <div class="col-12 col-xl-5 text-center text-xl-left mt-xl-3">
-              <h1>Build The Community Your Fans Will Love</h1>
-              <p class="pt-2 pt-xl-4">
-                Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-                Create connections with your users as you engage in genuine discussion.
-              </p>
-              <a href="#" class="btn cta-btn mt-xl-3" role="button" id="cta-btn-top">
-                Get Started For Free
-              </a>
-            </div>
-
-            <div class="col-12 col-xl-5">
-              <img src="assets/img/illustration-mockups.svg" alt="Mock Website Illustration" id="mockups">
-            </div>
-            
-          </div>
-
+        <div class="col-12 col-xl-5">
+          <img src="assets/img/illustration-mockups.svg" alt="Mock Website Illustration" id="mockups">
+        </div>
+        
       </div>
 
     </div>
@@ -219,16 +205,12 @@
     </footer>
 
 
-  </div>
+  </main>
     
 
     
-  
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Bootstrap 5 js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </body>
 </html>
