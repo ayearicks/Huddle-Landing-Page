@@ -58,4 +58,4 @@ Users should be able to:
 ## Author
 
 - Website - [Ashley Yearicks](https://yearicks.dev)
-- Twitter - [@jessarin5](https://www.twitter.com/jessarin5)
+- Email - [ashley.yearicks@gmail.com](mailto:ashley.yearicks@gmail.com)
